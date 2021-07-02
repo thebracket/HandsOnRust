@@ -1,0 +1,60 @@
+[package]
+name = "parent_delete_me"
+version = "0.1.0"
+authors = ["Herbert Wolverson <herberticus@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[workspace]
+members = [
+    "InstallingRust/Clippy",
+    "InstallingRust/ClippyFixed",
+    "InstallingRust/HelloWorld",
+    "FirstStepsWithRust/hello_yourname",
+    "FirstStepsWithRust/hello_yourname_function",
+    "FirstStepsWithRust/treehouse_guestlist",
+    "FirstStepsWithRust/treehouse_guestlist_enum",
+    "FirstStepsWithRust/treehouse_guestlist_problem",
+    "FirstStepsWithRust/treehouse_guestlist_struct",
+    "FirstStepsWithRust/treehouse_guestlist_trim",
+    "FirstStepsWithRust/treehouse_guestlist_vector",
+    "FirstGameFlappyAscii/flappy_dragon",
+    "FirstGameFlappyAscii/flappy_bonus",
+    "FirstGameFlappyAscii/flappy_player",
+    "FirstGameFlappyAscii/flappy_states",
+    "FirstGameFlappyAscii/hello_bterm",
+    "BasicDungeonCrawler/dungeon_crawl_map",
+    "BasicDungeonCrawler/dungeon_crawl_player",
+    "BasicDungeonCrawler/dungeon_crawl_rooms",
+    "BasicDungeonCrawler/dungeon_crawl_graphics",
+    "EntitiesComponentsAndSystems/dungeonecs",
+    "EntitiesComponentsAndSystems/playerecs",
+    "TurnBasedGames/wandering",
+    "TurnBasedGames/turnbased",
+    "TurnBasedGames/intent",
+    "HealthSimpleMelee/health",
+    "HealthSimpleMelee/combat",
+    "HealthSimpleMelee/healing",
+    "WinningAndLosing/gauntlet",
+    "WinningAndLosing/losing",
+    "WinningAndLosing/winning",
+    "WhatCanISee/fov",
+    "WhatCanISee/eyesight",
+    "WhatCanISee/memory",
+    "MoreInterestingDungeons/traits",
+    "MoreInterestingDungeons/traits_rooms",
+    "MoreInterestingDungeons/cellular",
+    "MoreInterestingDungeons/output_harness",
+    "MoreInterestingDungeons/drunkard",
+    "MoreInterestingDungeons/prefab",
+    "MapTheming/themed",
+    "InventoryAndPowerUps/potions_and_scrolls",
+    "InventoryAndPowerUps/carrying_items",
+    "DeeperDungeons/more_levels",
+    "Loot/loot_tables",
+    "Loot/better_combat"
+]
+
+[profile.release]
+lto = "thin"
