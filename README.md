@@ -2,7 +2,7 @@
 
 This repository contains the source code for the examples found in [Hands-on Rust](https://hands-on-rust.com/). These are also available from my publisher, [PragProg](https://pragprog.com/titles/hwrust/hands-on-rust/) and are shared with their permission.
 
-![](github-images/cover.jpg)
+![](github-images/cover.jpg | width=25)
 
 The examples included are:
 
