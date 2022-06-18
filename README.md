@@ -94,7 +94,7 @@ This code covers the *More Interesting Dungeons* chapter. It teaches the reader 
 * [Traits](https://github.com/thebracket/HandsOnRust/tree/main/MoreInterestingDungeons/traits)---convert map generation into a trait-based API and dynamically select algorithms at run-time.
 * [Traits: Rooms](https://github.com/thebracket/HandsOnRust/tree/main/MoreInterestingDungeons/traits_rooms)---convert your existing room generator to a trait-based map builder.
 * [Cellular Automata](https://github.com/thebracket/HandsOnRust/tree/main/MoreInterestingDungeons/cellular)---implement your first real map provider, and learn to use Cellular Automata to make an interesting map.
-* [Drunkard's Walk](https://github.com/thebracket/HandsOnRust/tree/main/MoreInterestingDungeons/cellular)---implement a second map generation technique, and learn about bounded iteration.
+* [Drunkard's Walk](https://github.com/thebracket/HandsOnRust/tree/main/MoreInterestingDungeons/drunkard)---implement a second map generation technique, and learn about bounded iteration.
 * [Prefabs](https://github.com/thebracket/HandsOnRust/tree/main/MoreInterestingDungeons/prefab)---learn to hand design your own level content, and apply it.
 * [Test Harness](https://github.com/thebracket/HandsOnRust/tree/main/MoreInterestingDungeons/output_harness)---a convenient structure for testing map builders without having to play the game over and over. Demonstrates the utility of making traits generic and then building separate harnesses in which to test them.
 
