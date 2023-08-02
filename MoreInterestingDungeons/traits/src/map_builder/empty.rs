@@ -19,7 +19,7 @@ impl MapArchitect for EmptyArchitect {//(3)
             mb.monster_spawns.push(
                 Point::new(
                     rng.range(1, SCREEN_WIDTH),
-                    rng.range(1, SCREEN_WIDTH)
+                    rng.range(1, SCREEN_HEIGHT)
                 )
             )
         }
