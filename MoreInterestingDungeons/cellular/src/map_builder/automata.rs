@@ -16,6 +16,7 @@ impl MapArchitect for CellularAutomataArchitect {
         for _ in 0..10 {
             self.iteration(&mut mb.map);
         }
+        self.add_boundaries(&mut mb.map);
         let start = self.find_start(&mb.map);
         mb.monster_spawns = mb.spawn_monsters(&start, rng);
         mb.player_start = start;
@@ -69,6 +70,19 @@ impl CellularAutomataArchitect {
             }
         }
         map.tiles = new_tiles;
+    }
+
+    fn add_boundaries(&mut self, map: &mut Map) {
+        for x in 1 .. SCREEN_WIDTH {
+            map.tiles[map_idx(x, 1)] = TileType::Wall;
+            map.tiles[map_idx(x, SCREEN_HEIGHT-1)] = TileType::Wall;
+            map.tiles[map_idx(x, 0)] = TileType::Wall;
+        }
+        for y in 1 .. SCREEN_HEIGHT {
+            map.tiles[map_idx(1, y)] = TileType::Wall;
+            map.tiles[map_idx(SCREEN_WIDTH-1, y)] = TileType::Wall;
+            map.tiles[map_idx(0, y)] = TileType::Wall;
+        }
     }
 
     fn find_start(&self, map: &Map) -> Point {
