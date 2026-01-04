@@ -7,6 +7,7 @@ mod random_move;
 mod chasing;
 mod end_turn;
 mod movement;
+mod movement_filter;
 mod hud;
 mod tooltips;
 mod combat;
@@ -41,6 +42,8 @@ pub fn build_monster_scheduler() -> Schedule {
         .add_system(chasing::chasing_system())
         .flush()
         .add_system(combat::combat_system())
+        .flush()
+        .add_system(movement_filter::movement_filter_system())
         .flush()
         .add_system(movement::movement_system())
         .flush()
